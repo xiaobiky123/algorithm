@@ -81,7 +81,7 @@ float normal_equation_para(Vec4f line0)
 		float a=asin(sina)*180/3.1415926;
 		a=180-a;
 
-		a=a*3.1415926/180.0;
+		a=a*3.1415926/180.0;                           //ÊÊÓÃÓÚ×óÆ«ºÍÓÒÆ«
 		float r = x*cos(a) + y*sin(a);
 		return r;
 	}
