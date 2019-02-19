@@ -63,7 +63,7 @@ int main()
             double tmp = martix[i][pos];
             for(int j = pos; j < m; j++)
             {
-                martix[i][j] = martix[i][j] / tmp;
+                martix[i][j] = martix[i][j] / tmp;//主元系数变成1
             }
         }
 
@@ -74,7 +74,7 @@ int main()
             double tmp = martix[j][pos];
             for(int k = pos; k < m; k++)
             {
-                martix[j][k] = martix[j][k] - martix[i][k] * tmp;
+                martix[j][k] = martix[j][k] - martix[i][k] * tmp; //消去主元上面的1
             }
         }
     }
@@ -83,7 +83,7 @@ int main()
     for(int i = 0; i < n; i++)
     {
         for(int j = 0; j < m; j++)
-            printf("%-10.2f", martix[i][j]);
+            printf("%-10.2f", martix[i][j]);    //经过向前和向后步骤 得到方程组右侧顺序就是x,y,z
         printf("\n");
     }
     return 0;
